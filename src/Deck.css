@@ -1,16 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 body {
-    background-color: forestgreen;
+    background-color: darkgreen;
+}
+
+.Deck {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.Deck h1 {
+    color: white;
+    font-family: 'Rampart One', cursive;
+    font-size: 2.5em;
+    margin: 5px 0;
+}
+
+.Deck h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    opacity: 0.5;
+    margin: 5px 0 20px;
+}
+
+.Deck button {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: darkred;
     color: white;
 }
 
 .Deck-cards {
-    display: flex;
-    justify-content: center;
+    height: 50vh;
+    padding: 30px;
 }
 
 .Deck-cards img {
     position: absolute;
+    height: 50%;
+    max-height: 300px;
     left: 0;
     right: 0;
-    margin: 30px auto 0;
+    margin: 0 auto;
 }

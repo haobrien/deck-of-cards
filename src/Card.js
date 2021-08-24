@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 
 class Card extends Component {
-    static defaultProps = {
-        // rotation: `rotate(${Math.random() * 360}deg)`
-    }
-    constructor(props){
+    constructor(props) {
         super(props)
+        let angle = Math.random() * 20 - 10
+        let xPos = Math.random() * 30 - 15
+        let yPos = Math.random() * 30 - 15
+        this._transform = `translate(${xPos}px, ${yPos}px) rotate(${angle}deg)`
     }
     render() {
         return (
-            <div>
-                <img src={this.props.url} style={{transform: 0}}/>
-            </div>
+            <img 
+                style={{ transform: this._transform }}
+                src={this.props.url} 
+                alt="card" />
         )
     }
 }

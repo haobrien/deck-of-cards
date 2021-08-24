@@ -52,8 +52,11 @@ class Deck extends Component {
 
         return (
             <div className="Deck">
-                <h1>Deck of Cards</h1>
-                {btn}
+                <header>
+                    <h1>Deck of Cards</h1>
+                    <h2>A small demo made with React.js</h2>
+                    {btn}
+                </header>
                 <div className="Deck-cards">
                     {cards}
                 </div>
