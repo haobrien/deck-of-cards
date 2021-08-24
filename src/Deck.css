@@ -1,0 +1,16 @@
+body {
+    background-color: forestgreen;
+    color: white;
+}
+
+.Deck-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.Deck-cards img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 30px auto 0;
+}
